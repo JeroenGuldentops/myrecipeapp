@@ -1,0 +1,97 @@
+.grid {
+    display: grid;
+}
+
+.grid-5col {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@font-face {
+    font-family: Brogi;
+    src: url(../inc/Brogi-FREE.otf);
+}
+
+@font-face {
+    font-family: Jode;
+    src: url(../inc/Jode.otf);
+}
+
+@font-face {
+    font-family: Caviar;
+    src: url(../inc/CaviarDreams.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Caviar;
+    src: url(../inc/CaviarDreams_Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-brogi {
+    font-family: Brogi, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.font-jode {
+    font-family: Jode, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.font-caviar {
+    font-family: Caviar, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main section#categories figure {
+    background-position: center;
+}
+
+main section#categories figure figcaption {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.65);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all ease-in-out 250ms;
+}
+
+main section#categories figure figcaption p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+}
+
+main section#categories a:hover figure figcaption,
+main section#meals a:hover figure figcaption {
+    opacity: 1
+}
+
+main section#meals p {
+    text-align: center;
+}
+
+main section#meals a {
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50rem;
+    transition: all ease-in-out 250ms;
+}
+
+footer {
+    font-size: small;
+    background-color: ;
+}
+
+div.banner {
+    min-height: 10rem;
+    background-color: brown;
+    margin-bottom: 2rem;
+    background-position: center;
+    background-size: cover;
+}

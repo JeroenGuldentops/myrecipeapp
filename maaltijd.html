@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptenboek</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="relative">
+
+    <header
+        class="sticky top-0 left-0 right-0 flex justify-between items-center px-8 py-4 text-white bg-indigo-700 shadow-md">
+        <h1 class="text-4xl font-bold font-brogi">MyRecipe App</h1>
+        <a href="index.html"
+            class="font-caviar font-bold bg-indigo-400 px-4 py-2 rounded-xl hover:bg-indigo-500 transition-all ease-in-out duration-300">Home</a>
+    </header>
+
+    <main class="container mx-auto pt-8 pb-24">
+        <section id="titleSectoin" class="flex justify-between mb-8 md:mb-12">
+            <h2 id="mealTitle" class="text-2xl font-caviar font-bold text-indigo-950">Titel maaltijd hier</h2>
+            <a href=""
+                class="font-caviar font-bold bg-teal-400 text-sm text-white px-4 py-2 rounded-xl hover:bg-teal-500 transition-all ease-in-out duration-300">Terug
+                naar categorie</a>
+        </section>
+
+        <section id="pictureIngredients" class="grid grid-cols-1 md:grid-cols-5 gap-4 pb-6 md:pb-8 justify-items-left">
+            <div id="picture" class="col-span-2 pb-6 md:pb-0"></div>
+            <div id="ingredients" class="col-span-3">
+                <h3 class="pb-2 md:pb-4 font-caviar font-bold text-xl text-indigo-700">Ingrediënten</h3>
+                <dl class="flex gap-12 font-caviar text-indigo-700">
+                    <dt class="bg-indigo-400">Beschrijving<!-- Foto hier --><img
+                            src="www.themealdb.com/images/ingredients/Lime-Small.png" alt=""></dt>
+                    <dd><!-- Ingrediënt -->Limoen <img src="www.themealdb.com/images/ingredients/Lime-Small.png" alt="">
+                    </dd>
+                    <dd><!-- Hoeveelheid ingrediënt --> 150 ml</dd>
+                </dl>
+            </div>
+        </section>
+
+        <section id="mealDescription">
+            <h3 class="pb-2 md:pb-4 font-caviar font-bold text-xl text-indigo-700">Bereidingswijze</h3>
+            <p class="font-caviar text-indigo-950">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint
+                voluptates exercitationem recusandae
+                perferendis iure beatae unde, ipsum distinctio placeat modi quasi harum ullam quam nisi quo, suscipit
+                quod velit consectetur doloremque eos aut eum alias. Porro officiis voluptatibus rem. Iure, assumenda id
+                dicta itaque cum nostrum alias corporis voluptas, rerum minus atque illum, ipsum at corrupti dolorem
+                voluptatem explicabo nihil? Nostrum harum error culpa asperiores unde quae nisi sequi, eaque facilis rem
+                hic amet. Laudantium impedit dolorum sit accusantium corrupti, perferendis fugit! Facere voluptates
+                repudiandae nesciunt consequuntur, dicta hic commodi voluptatibus illum vel nisi pariatur omnis ducimus?
+                Rem, blanditiis.</p>
+        </section>
+
+    </main>
+
+    <footer class="fixed bottom-0 left-0 right-0 flex justify-between px-8 py-2 bg-indigo-900 text-white">
+        <p class="font-brogi text-lg md:text-xl">Weet wat je eet en zorg dat je 't nooit vergeet</p>
+        <p>&copy; Jeroen Guldentops</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

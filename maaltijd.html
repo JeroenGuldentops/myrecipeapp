@@ -19,31 +19,37 @@
             class="font-caviar font-bold bg-indigo-400 px-4 py-2 rounded-xl hover:bg-indigo-500 transition-all ease-in-out duration-300">Home</a>
     </header>
 
-    <main class="container mx-auto pt-8 pb-24">
-        <section id="titleSectoin" class="flex justify-between mb-8 md:mb-12">
+    <main class="container mx-auto px-12 pt-8 pb-24">
+        <section id="titleSection" class="flex justify-between mb-8 md:mb-12">
             <h2 id="mealTitle" class="text-2xl font-caviar font-bold text-indigo-950">Titel maaltijd hier</h2>
-            <a href=""
+            <a href="" id="backToCategoryButton"
                 class="font-caviar font-bold bg-teal-400 text-sm text-white px-4 py-2 rounded-xl hover:bg-teal-500 transition-all ease-in-out duration-300">Terug
                 naar categorie</a>
         </section>
 
-        <section id="pictureIngredients" class="grid grid-cols-1 md:grid-cols-5 gap-4 pb-6 md:pb-8 justify-items-left">
-            <div id="picture" class="col-span-2 pb-6 md:pb-0"></div>
-            <div id="ingredients" class="col-span-3">
+        <section id="pictureIngredientsSection"
+            class="grid grid-cols-1 md:grid-cols-5  pb-6 md:pb-8 justify-items-left">
+            <div class="col-span-2 pb-6 md:pb-0 md:size-1/2 xl:size-3/4">
+                <img src="https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg" alt="" id="mealPicture"
+                    class="object-cover md:object-fill max-h-56 md:max-h-max min-w-full rounded-xl md:rounded-2xl">
+            </div>
+            <div class="col-span-3">
                 <h3 class="pb-2 md:pb-4 font-caviar font-bold text-xl text-indigo-700">Ingrediënten</h3>
-                <dl class="flex gap-12 font-caviar text-indigo-700">
-                    <dt class="bg-indigo-400">Beschrijving<!-- Foto hier --><img
-                            src="www.themealdb.com/images/ingredients/Lime-Small.png" alt=""></dt>
-                    <dd><!-- Ingrediënt -->Limoen <img src="www.themealdb.com/images/ingredients/Lime-Small.png" alt="">
-                    </dd>
-                    <dd><!-- Hoeveelheid ingrediënt --> 150 ml</dd>
-                </dl>
+
+                <div id="ingredients" class="grid grid-cols-6 gap-4 items-center font-caviar text-indigo-700">
+                    <div>
+                        <img src="http://www.themealdb.com/images/ingredients/Lime-Small.png" alt="" class="size-10">
+                    </div>
+                    <p class="col-span-2">Limoen</p>
+                    <p class="col-span-3">150 ml</p>
+                </div>
             </div>
         </section>
 
-        <section id="mealDescription">
+        <section id="descriptionSection">
             <h3 class="pb-2 md:pb-4 font-caviar font-bold text-xl text-indigo-700">Bereidingswijze</h3>
-            <p class="font-caviar text-indigo-950">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint
+            <p id="mealDescription" class="font-caviar text-indigo-950">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nihil sint
                 voluptates exercitationem recusandae
                 perferendis iure beatae unde, ipsum distinctio placeat modi quasi harum ullam quam nisi quo, suscipit
                 quod velit consectetur doloremque eos aut eum alias. Porro officiis voluptatibus rem. Iure, assumenda id

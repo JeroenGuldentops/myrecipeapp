@@ -148,21 +148,27 @@ function addIngredients(ingredients) {
     ingredients.forEach(ingredient => {
         const $div = document.createElement("div");
         const $img = document.createElement("img");
+        const $spanIngr = document.createElement("span");
         const $pIngredient = document.createElement("p");
+        const $spanMeas = document.createElement("span");
         const $pMeasure = document.createElement("p");
 
-        $img.classList = "size-10";
+        $img.classList = "my-1 size-10";
         $img.setAttribute("src", ingredient.thumb);
-
-        $div.classList = "hidden md:contents max-h-max";
+        $div.classList = "hidden md:inline-block w-full";
         $div.appendChild($img);
 
-        $pIngredient.classList = "col-span-2 h-full align- ";
-        $pIngredient.classList.add("bg-indigo-50");
+        $pIngredient.classList = "flex col-span-2 my-1 h-full items-center";
         $pIngredient.innerHTML = ingredient.description;
 
-        $pMeasure.classList.add("col-span-3");
+        $pMeasure.classList = "flex col-span-3 my-1 h-full items-center";
         $pMeasure.innerHTML = ingredient.measure;
+
+        if (colorCode === -1) {
+            $div.classList.add("bg-indigo-50");
+            $pIngredient.classList.add("bg-indigo-50");
+            $pMeasure.classList.add("bg-indigo-50");
+        }
 
         $ingredients.appendChild($div);
         $ingredients.appendChild($pIngredient);

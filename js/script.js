@@ -65,9 +65,7 @@ async function addMeals() {
         // $a.classList.add(["hover:bg-indigo-100", "hover:text-indigo-800"].join(" "));
         $a.classList.add("hover:bg-indigo-100");
         $a.classList.add("hover:font-bold");
-        const $p = document.createElement("p");
-        $p.textContent = meal.strMeal;
-        $a.appendChild($p);
+        $a.textContent = meal.strMeal;
         $mealSection.appendChild($a);
     });
 

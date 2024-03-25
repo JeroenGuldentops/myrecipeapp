@@ -159,7 +159,7 @@ function addIngredients(ingredients) {
         $pIngredient.classList = "flex col-span-2 my-1 h-full items-center";
         $pIngredient.innerHTML = ingredient.description;
 
-        $pMeasure.classList = "flex col-span-3 my-1 h-full items-center";
+        $pMeasure.classList = "flex col-span-4 md:col-span-3 my-1 h-full items-center";
         $pMeasure.innerHTML = ingredient.measure;
 
         if (colorCode === -1) {

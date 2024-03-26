@@ -112,10 +112,6 @@ async function addMealInfo() {
 
     $mealImage.setAttribute("src", mealData.strMealThumb);
 
-    // const $instructions = document.querySelector("#instructions");
-    // $instructions.innerHTML = mealData.strInstructions.replaceAll("\r\n", "<br>");
-    // // $instructions.innerHTML = mealData.strInstructions.replaceAll("\r\n", "</p> <p>");
-
     const instructionsParagraphs = mealData.strInstructions.split("\r\n" || "\r\n\r\n");
     instructionsParagraphs.forEach(string => {
         const $p = document.createElement("p");
@@ -176,6 +172,11 @@ function addIngredients(ingredients) {
     });
 }
 
+
+
+
+
+//Oude code, niet meer gebruikt:
 
 // const categories = data.meals.map(element => element.strCategory);
 
